@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/screens.dart';
 
 void main() => runApp(const App());
 
@@ -8,10 +9,13 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Stacked Cards Example',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xffCC5EBA),
+        ),
       ),
+      home: const HomeScreen(title: 'Stacked Cards'),
     );
   }
 }
